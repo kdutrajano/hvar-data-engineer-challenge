@@ -41,7 +41,7 @@ Files should be separated into a time partitioned folder structure.
 
 One of the key necessities for HKey when it comes to data is data science and business intelligence. This means it's very important that the data is well aggregated, easy to access and utilize. One way to do this is the creation of data marts. For this scenario, the following data marts should be created for these key users to utilize:
 
-1. **Customer Data Mart:** must contain all the information regarding the customer, as well as the latitude and longitude of the customer's geolocated zip-code. The nearest one should be chosen.
+1. **Customer Data Mart:** must contain all the information regarding the customer, as well as the latitude and longitude of the customer's geolocated zip-code. Approximate the region's latitude and longitude for the prefix.
 1. **Product Data Mart:** must contain all information regarding products. The product category in this data mart must be located to English.
 1. **Order Data Mart:** must contain all information regarding an order, including all of the items acquired. Review information must not be in this data mart.
 1. **Review Data Mart:** must contain all information regarding customer reviews of orders.
@@ -49,7 +49,7 @@ One of the key necessities for HKey when it comes to data is data science and bu
 
 ## Non-Functional Requirements
 
-You can use any tools at your disposable to design your solution. Document your code with both comments and guidance documents, and write easy to maintain and scalable solutions. Think of elasticity and the amount of data that will be processed. The deliverable for this challenge will be:
+You can use any tools at your disposal to design your solution. Document your code with both comments and guidance documents, and write easy to maintain and scalable solutions. Think of elasticity and the amount of data that will be processed. The deliverable for this challenge will be:
 
 1. A zip file containing your solution. Structure as if pushing to a Git repository, with a `README.md` file describing your solution and design choices. Be as clear as possible!
 1. Sample `csv` files of the data marts following all the requisites above.
